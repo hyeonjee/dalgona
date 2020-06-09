@@ -1,0 +1,132 @@
+<style>
+    h1 {
+        text-align: center;
+        padding-top: 60;
+    }
+
+    h2,h3 {
+        text-align: center;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .second_question {
+        text-align: center;
+
+    }
+</style>
+
+
+
+
+
+
+    <h1>
+        자 이제 달고나를 저어볼까요?
+    </h1>
+    <h2>400번을 저어주어야 한답니다~.~</h2>
+    <img src="https://www.foodnews.news/data/photos/20200312/art_15843438552099_ac9b0a.png" alt="달고나 휘젓는 사진" width="200"
+        height="200">
+    <br />
+    <br />
+
+    <form>
+        <input type=button value="휘젓기" onclick=button_onclick()>
+    </form>
+
+    <span id='count'></span>
+    <div id="show_1">
+        <img src="https://file3.instiz.net/data/cached_img/upload/2019/10/03/15/6b1e55dc10e568262bd7236701a6d79a.jpg"
+            width="250" height="200">
+        <br />
+        <br />
+        <span>거의 다 왔어요!!
+            <br />
+            앞으로 300번만 더! 화이팅~.~
+        </span>
+    </div>
+
+    <div id="show_2">
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAxODAyMTJfMjYy/MDAxNTE4NDA2Mzc3MzUy.TfP5bu5DGLdVImf5xTlhF7Voc42W2ysUFquD-zMq8fAg.SpDOqVqNPi5nHEo7sx2sY79MPdMb1A66FpDjt3GaKN8g.GIF.ifixph/SmartSelectGIF_2018-02-12-11-21-49.gif?type=w800"
+            width="250" height="200">
+        <br />
+        <br />
+        <span>거의 다 왔어요!!
+            <br />
+            앞으로 200번만 더! 화이팅~.~
+        </span>
+    </div>
+
+    <div id="show_3">
+        <img src="https://lh3.googleusercontent.com/proxy/jQRllcg4guxiy72TxDUc0N_ze7osJ0Gzw3ZBIDK6RAXlQSxAV46mD_7itigWa-06z0a7rdJ87o3B1oHm5E16c4W6zfvWBcS5jngmgZoxx-P43wyu6UoyRuvGaefDKgwWo-vApcoe6IGvH2zOyZ33-Udxe0h90BxL"
+            width="250" height="200">
+        <br />
+        <br />
+        <span>거의 다 왔어요!!
+            <br />
+            앞으로 100번만 더! 화이팅~.~
+        </span>
+    </div>
+
+    <div id="select" style="display:none;">
+        <h3>모양을 선택해주세요</h3>
+        <a href="/star/" class="btn btn-primary btn-lg active" role="button"><img
+                src="https://www.hsmaru.com/shopimages/kigujiro/0220030000522.jpg" width="300" height="300"
+                alt="별모양" class="img-rounded"></a>
+        <a href="/two/" class="btn btn-primary btn-lg active" role="button"><img
+                src="https://lh3.googleusercontent.com/proxy/T47moyROOqtlz4wg18onQNL25hyygY8HZn8dM2LFPrRrFr_KfEdlmH8pFuWG51Iarq1Q2sB8A1jHIgT6t1-i_6p-eg352WJl6xd46cyR-m3iPoj-9jm1r5FJc8fP" width="300"
+                alt="하트모양" class="img-rounded"></a>
+        <a href="/three/" class="btn btn-primary btn-lg active" role="button"><img
+                src="https://www.cookiebebe.com/shopimages/cookiebebe/006002000178.jpg?1508313372" width="300"
+                alt="쿠키모양" class="img-rounded"></a>
+    </div>
+
+
+<style>
+    #show_1 {
+        display: none;
+    }
+
+    #show_2 {
+        display: none;
+    }
+
+    #show_3 {
+        display: none;
+    }
+</style>
+
+<script lang='javascript'>
+    var count = 0;
+    function button_onclick() {
+        count++;
+        document.getElementById('count').innerHTML = count;
+        if (count == 400) {
+            alert("완성");
+            document.getElementById('select').style.display = 'block';
+        }
+        if (count == 100) {
+            document.getElementById('show_1').style.display = 'block';
+        }
+        if (count == 101) {
+            document.getElementById('show_1').style.display = 'none';
+        }
+        if (count == 200) {
+            document.getElementById('show_2').style.display = 'block';
+        }
+        if (count == 201) {
+            document.getElementById('show_2').style.display = 'none';
+        }
+        if (count == 300) {
+            document.getElementById('show_3').style.display = 'block';
+        }
+        if (count == 301) {
+            document.getElementById('show_3').style.display = 'none';
+        }
+
+
+
+    }
+</script>
