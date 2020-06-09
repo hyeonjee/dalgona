@@ -12,64 +12,99 @@
 
 
   <!-- 부트스트랩 -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/js/bootstrap.min.js" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/project.css' %}">
-  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 
 
-  <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js
-    -->
-  <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+  <link rel="stylesheet" href="/bootstrap.min.css">
+
 
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gloria+Hallelujah&display=swap');
+
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .btn {
+      text-decoration: none;
+      display: block;
+      width: 180px;
+      height: 56px;
+      line-height: 40px;
+      border: 1px #ff9900 solid;
+      margin: 15px auto;
+      background-color: #ff9900;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Alfa Slab One', cursive;
+      font-family: 'Gloria Hallelujah', cursive;
+      cursor: pointer;
+      color: rgb(114, 42, 248);
+      transition: all 0.9s, color 0.3;
+    }
+
+    .btn:hover {
+      color: rgb(238, 255, 0);
+      text-decoration: none;
+    }
+
+    .hover4:hover {
+      box-shadow: 200px 0 0 0 rgba(0, 255, 221, 0.25) inset, -200px 0 0 0 rgba(255, 21, 216, 0.25) inset;
+      text-decoration: none;
+    }
 
     .this {
       text-align: center;
       align-items: center;
       font-family: 'Gugi', cursive;
-
     }
 
-    .container {
-      margin-left: 590px;
+    .ho {
+      margin-top: 70px;
+      margin-left: 460px;
+      margin-right: 460px;
+      background-color: papayawhip;
     }
 
-    body{
+    .dalgonaimg {
+      padding: 20px;
+    }
+
+    body {
+
       background-image: url('https://kkoma.net/web/product/big/201811/47d0589e780a72a074cb0f62c04b4ced.jpg');
+      background-size: cover;
+    }
+
+    .button {
+      padding-left: 620px;
+      padding-right: 680px;
     }
   </style>
-
 </head>
 
 
 <body>
-
-
   <div class="this">
-    <h1>추억의 달고나</h1>
-    <h2>달고나를 만들어 봅시다</h2>
-    <img src="https://cdn.crowdpic.net/list-thumb/thumb_l_DC980A2F9A276F1A462953F71DA589BD.jpg" width=800 height=450
-      alt="이것은 달고나" />
-    <br />
-    <br />
-    <div class="container">
-      <a href="/happy/"><button class="btn-1">start</button></a>
+    <div class="ho">
+      <h1>추억의 달고나 만들기</h1>
     </div>
-  </div>
 
+    <div class="dalgonaimg">
+      <img src="https://cdn.crowdpic.net/list-thumb/thumb_l_DC980A2F9A276F1A462953F71DA589BD.jpg" alt="이것은 달고나" />
+    </div>
 
-  <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
-  <script src="js/bootstrap.min.js"></script>
+    <a href="/happy/"><button class="btn hover4">S T A R T </button></a>
+
+    <!-- 
+ jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 
 </html>

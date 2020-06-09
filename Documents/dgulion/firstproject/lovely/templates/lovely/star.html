@@ -1,26 +1,60 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
     .done {
+        font-family: 'Gugi', cursive;
         text-align: center;
     }
 
-    body{
+    body {
         text-align: center;
+        background-image: url("https://cdn.pixabay.com/photo/2015/12/19/12/40/kids-1099709_1280.jpg");
+        background-size: contain;
     }
 
-    h2{
+    h2 {
+        font-weight: bold;
+        color: rgba(19, 133, 34, 0.89);
         padding-top: 20px;
+        font-family: 'Gugi', cursive;
+    }
+
+    .btn {
+        display: block;
+        width: 180px;
+        height: 56px;
+        line-height: 40px;
+        border: 1px #c158f1 solid;
+        margin: 15px auto;
+        background-color: #c158f1;
+        text-align: center;
+        font-size: large;
+        font-family: 'Gugi', cursive;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        transition: all 0.9s, color 0.3;
+    }
+
+    .btn:hover {
+        color: rgb(98, 234, 252);
+    }
+
+    .hover4:hover {
+        box-shadow: 200px 0 0 0 rgba(0, 255, 221, 0.25) inset, -200px 0 0 0 rgba(255, 21, 216, 0.25) inset;
     }
 </style>
 
 <body>
     <div= class="done">
-        <h2>달고나 완성!</h2>
-        <img src="https://img.theqoo.net/img/sWsEf.png" width="600" height="500" alt="별모양달고나" />
-        <h2>냠냠</h2>
+        <h2>달고나 완성! <br/>
+            냠냠
+        </h2>
+        <img src="https://cdn.crowdpic.net/list-thumb/thumb_l_BF5126E5B29A74C1F8B0A2F55C0FF541.jpg" width="600"
+            height="500" alt="별모양달고나" />
         </div>
 
         <div class="container">
-            <a href="/happy/"><button class="btn-1">다시 만들러 가기</button></a>
-          </div>
-        
+            <a href="/happy/"><button class="btn hover4">다시 돌아가기 </button></a>
+        </div>
+
 </body>
